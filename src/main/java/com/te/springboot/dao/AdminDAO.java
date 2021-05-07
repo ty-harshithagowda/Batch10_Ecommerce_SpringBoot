@@ -1,8 +1,10 @@
 package com.te.springboot.dao;
 import java.util.List;
 
-import com.te.springmvc.beans.AdminBean;
-import com.te.springmvc.beans.ItemBean;
+import com.te.springboot.bean.dto.AdminBean;
+import com.te.springboot.bean.dto.ItemBean;
+
+
 
 public interface AdminDAO {
 

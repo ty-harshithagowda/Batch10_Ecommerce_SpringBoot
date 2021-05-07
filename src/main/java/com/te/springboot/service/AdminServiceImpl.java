@@ -47,20 +47,6 @@ public class AdminServiceImpl implements AdminService {
 
 
 	@Override
-	public AdminBean getAllItems1() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	@Override
-	public AdminBean getAllItems() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	@Override
 	public AdminBean authenticate(Integer aid, String password) {
 		// TODO Auto-generated method stub
 		return null;
@@ -68,34 +54,6 @@ public class AdminServiceImpl implements AdminService {
 
 
 	@Override
-	public ItemBean getEmpData(Integer aid) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	@Override
-	public boolean addItem(ItemBean Bean) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-
-	@Override
-	public boolean updateItem(ItemBean infoBean) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-
-	@Override
-	public List<ItemBean> getAllEmployeeDetails() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	@Override
 	public AdminBean getAllItems1() {
 		// TODO Auto-generated method stub
 		return null;
@@ -107,6 +65,9 @@ public class AdminServiceImpl implements AdminService {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	
 
 
 

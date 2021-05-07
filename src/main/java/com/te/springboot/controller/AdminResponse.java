@@ -7,6 +7,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonRootName;
+import com.te.springboot.bean.dto.ItemBean;
 
 import lombok.Data;
 
@@ -17,7 +18,7 @@ import lombok.Data;
 @JsonPropertyOrder({"status" , "msg"})
 @XmlRootElement(name = "response")
 //@JsonInclude(JsonInclude.Include.NON_NULL)
-public class  AdminResponse<AdminInfoBean> implements Serializable{
+public class  AdminResponse implements Serializable{
 
 	@JsonProperty("status")
 	@XmlElement(name = "status-code")
@@ -26,10 +27,41 @@ public class  AdminResponse<AdminInfoBean> implements Serializable{
 	
 	private String  msg;
 	
-	@JsonProperty("Admin-info")
-	@XmlElement(name = "Admin-info")
-	private AdminInfoBean bean;
-	
-	
-	private List<AdminInfoBean> AdminInfo;
+	@JsonProperty("employee_info")
+	@XmlElement(name = "employee-info")
+	private ItemBean bean;
+
+	private List<ItemBean> employeeInfos;
+
+	public int getStatusCode() {
+		return statusCode;
+	}
+
+	public void setStatusCode(int statusCode) {
+		this.statusCode = statusCode;
+	}
+
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+
+	public ItemBean getBean() {
+		return bean;
+	}
+
+	public void setBean(ItemBean bean) {
+		this.bean = bean;
+	}
+
+	public List<ItemBean> getEmployeeInfos() {
+		return employeeInfos;
+	}
+
+	public void setEmployeeInfos(List<ItemBean> employeeInfos) {
+		this.employeeInfos = employeeInfos;
+	}
 }
